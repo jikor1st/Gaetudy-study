@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    /** 
+     * @description 함수 호출 방식에 따른 this 바인딩
+    */
+    console.log("함수 호출 방식에 따른 this 바인딩");
+    (function () {
+      function person() {
+        this.name = "Jone";
+        this.age = 18;
+        console.log(this); // window 객체에 name과 age 프로퍼티가 생성이 된다.
+      }
+      person();
+
+    })();
+    (function () {
+      function Person() {
+        this.name = "Jone";
+        this.age = 18;
+        console.log(this);
+      }
+      new Person();
+    })();
+
+    /**
+     * @description use strict 모드를 사용했을 때 this의 동작
+     */
+    console.log('use strict 모드를 사용했을 때 this의 동작');
+    (function () {
+      'use strict'
+      function Person() {
+        console.log(this)
+      }
+      Person();
+    })();
+    (function () {
+      'use strict'
+      function Person() {
+        console.log(this) // Person {}
+      }
+      new Person();
+    })();
+  </script>
+</body>
+
+</html>
