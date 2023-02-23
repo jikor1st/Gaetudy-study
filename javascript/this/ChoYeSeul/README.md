@@ -107,3 +107,11 @@ obj.showArr(); // this에 obj객체가 출력된다.
 <br />
 
 #### (2) 이어서 진행 예정
+
+참고
+
+- https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this
+- https://eunjinii.tistory.com/104
+- https://hanamon.kr/javascript-this%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C/
+- https://velog.io/@realryankim/JavaScript-this%EB%9E%80
+- https://poiemaweb.com/js-this
