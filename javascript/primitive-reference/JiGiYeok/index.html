@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    (() => {
+      const number = new Number();
+      const string = new String();
+      const boolean = new Boolean();
+
+      console.log(number);
+      console.log(string);
+      console.log(boolean);
+    })();
+
+    (() => {
+      let a = 10;
+      let b = a;
+
+      a = 8;
+
+      console.log(b)
+      // 10
+    })()
+  </script>
+</body>
+
+</html>
