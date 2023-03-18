@@ -1,9 +1,23 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
-    <title>This Test</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
   </head>
   <body>
-    <script></script>
+    <h1>This test page</h1>
+    <script>
+      // arrow function?
+      function func() {
+        return console.log("function this : " + this);
+      }
+      const arrfunc = () => {
+        return console.log("arrow function this :" + this);
+      };
+      func();
+      arrfunc();
+    </script>
   </body>
 </html>
